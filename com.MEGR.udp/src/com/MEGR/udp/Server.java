@@ -19,7 +19,7 @@ public class Server {
 	 
 	    	 //Abrimos un socket en el puerto 6000
 	    	  //A traves de este socket enviaremos paquetes de tipo Datagram
-	         socket = new DatagramSocket(6000);
+	         socket = new DatagramSocket(1110);
 	 
 	         //Nos preparamos para recibir una mensaje de 256 bytes
 	    	 byte[] mensaje_bytes = new byte[256];
@@ -44,7 +44,7 @@ public class Server {
 	           System.out.println(mensaje);  
 	 
 	 
-	           //Condiciones encadenadas para mandar la información
+	           //Condiciones encadenadas para mandar la informacion
 	           //dependiendo del dato recibido
 	           if (mensaje.startsWith("Holaaaaaaa uwu")) {
 	 

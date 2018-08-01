@@ -56,7 +56,7 @@ public class Cliente {
 		            mensaje_bytes = mensaje.getBytes();
 		 
 		            //Creamos paquete
-		            paquete = new DatagramPacket(mensaje_bytes,mensaje.length(),address,6000);
+		            paquete = new DatagramPacket(mensaje_bytes,mensaje.length(),address,1110);
 		 
 		            //Mandamos el paquete
 		            socket.send(paquete);
